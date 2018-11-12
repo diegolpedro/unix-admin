@@ -5,9 +5,14 @@
 
 #### Agrega repositorio de postgres
 -----------------------------------
+PostgreSQL Apt Repository soporta las siguientes LTS versiones de Ubuntu:
+    18.04 bionic
+    16.04 xenial
+    14.04
+
 ```
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main" >> /etc/apt/sources.list.d/postgresql.list'
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ <VERSION_DE_UBUNTU>-pgdg main" >> /etc/apt/sources.list.d/postgresql.list'
 ```
 
 [Info - wiki.openstreetmap.org](https://wiki.openstreetmap.org/wiki/PostGIS/)
